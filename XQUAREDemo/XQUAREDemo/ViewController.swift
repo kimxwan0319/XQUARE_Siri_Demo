@@ -6,14 +6,40 @@
 //
 
 import UIKit
+import MealIntentKit
+import Intents
+import IntentsUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, INUIAddVoiceShortcutViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func restoreUserActivityState(_ activity: NSUserActivity) {
+        super.restoreUserActivityState(activity)
+        
+        print("yes")
     }
 
-
+    @IBAction func addShortcutBtn(_ sender: Any) {
+        guard let shortcut = INShortcut(intent: ViewTodaysMealIntent()) else {
+            return
+        }
+        let viewController = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+        viewController.delegate = self
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        if let error = error as NSError? {
+            print("Error adding voice shortcut: \(error)")
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
-
