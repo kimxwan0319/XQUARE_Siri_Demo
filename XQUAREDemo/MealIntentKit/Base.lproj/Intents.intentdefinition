@@ -23,6 +23,8 @@
 			<string>Show today's meal</string>
 			<key>INIntentDescriptionID</key>
 			<string>39Jo5q</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>2</integer>
 			<key>INIntentName</key>
 			<string>ViewTodaysMeal</string>
 			<key>INIntentParameterCombinations</key>
@@ -41,7 +43,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>Today's meal is...</string>
+						<string>Today's ${timePart} is ${meal}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>OI6p1e</string>
 						<key>INIntentResponseCodeName</key>
@@ -56,6 +58,39 @@
 						<string>SoD4C1</string>
 						<key>INIntentResponseCodeName</key>
 						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>3</integer>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Meal</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>skc7UP</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>meal</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Time Part</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>ZF3yJg</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>2</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>timePart</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>3</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
 					</dict>
 				</array>
 			</dict>

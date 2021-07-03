@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922DD1C3267AE91E00BE43BD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		922DD1C4267AE91E00BE43BD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */; };
+		922DD1C5267AE91E00BE43BD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		922DD1C6267AE91E00BE43BD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		925AA1B226789ACF00BABCD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA1B126789ACF00BABCD3 /* AppDelegate.swift */; };
 		925AA1B626789ACF00BABCD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA1B526789ACF00BABCD3 /* ViewController.swift */; };
 		925AA1B926789ACF00BABCD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925AA1B726789ACF00BABCD3 /* Main.storyboard */; };
@@ -16,19 +20,18 @@
 		925AA1DF2678B0F200BABCD3 /* MealIntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA1CA2678B0F200BABCD3 /* MealIntentKit.framework */; };
 		925AA1E02678B0F200BABCD3 /* MealIntentKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA1CA2678B0F200BABCD3 /* MealIntentKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		925AA1E92678B28600BABCD3 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA1E82678B28600BABCD3 /* NSUserActivity+IntentData.swift */; };
-		925AA2102678DB1D00BABCD3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */; };
-		925AA2112678DB3B00BABCD3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		925AA21C2678DE9100BABCD3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA21B2678DE9100BABCD3 /* IntentHandler.swift */; };
 		925AA2242678DE9100BABCD3 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA2232678DE9100BABCD3 /* IntentsUI.framework */; };
 		925AA2272678DE9100BABCD3 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2262678DE9100BABCD3 /* IntentViewController.swift */; };
 		925AA22A2678DE9100BABCD3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925AA2282678DE9100BABCD3 /* MainInterface.storyboard */; };
 		925AA22E2678DE9100BABCD3 /* ViewTodaysMealUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 925AA2222678DE9100BABCD3 /* ViewTodaysMealUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		925AA2312678DE9100BABCD3 /* ViewTodaysMeal.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 925AA2162678DE9100BABCD3 /* ViewTodaysMeal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		925AA2392678DEB100BABCD3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
-		925AA23A2678DEB100BABCD3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		925AA23D2678DED500BABCD3 /* MealIntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA1CA2678B0F200BABCD3 /* MealIntentKit.framework */; };
 		925AA2402678DEEB00BABCD3 /* MealIntentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AA1CA2678B0F200BABCD3 /* MealIntentKit.framework */; };
 		925AA2432678DF5000BABCD3 /* ViewTodaysMealIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925AA2422678DF5000BABCD3 /* ViewTodaysMealIntentHandler.swift */; };
+		92920AE1268C4D6900AE1B76 /* RxSchoolMeal in Frameworks */ = {isa = PBXBuildFile; productRef = 92920AE0268C4D6900AE1B76 /* RxSchoolMeal */; };
+		92AC04C2268F4A810021615F /* RxSchoolMeal in Frameworks */ = {isa = PBXBuildFile; productRef = 92AC04C1268F4A810021615F /* RxSchoolMeal */; };
+		92AC04C4268F4A920021615F /* RxSchoolMeal in Frameworks */ = {isa = PBXBuildFile; productRef = 92AC04C3268F4A920021615F /* RxSchoolMeal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		922DD1C7267AE91E00BE43BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		925AA1AE26789ACF00BABCD3 /* XQUAREDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQUAREDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		925AA1B126789ACF00BABCD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		925AA1B526789ACF00BABCD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +111,6 @@
 		925AA1CC2678B0F200BABCD3 /* MealIntentKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealIntentKit.h; sourceTree = "<group>"; };
 		925AA1CD2678B0F200BABCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925AA1E82678B28600BABCD3 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
-		925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		925AA2162678DE9100BABCD3 /* ViewTodaysMeal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ViewTodaysMeal.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		925AA2182678DE9100BABCD3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		925AA21B2678DE9100BABCD3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 		925AA22B2678DE9100BABCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925AA2412678DEF500BABCD3 /* XQUAREDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XQUAREDemo.entitlements; sourceTree = "<group>"; };
 		925AA2422678DF5000BABCD3 /* ViewTodaysMealIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTodaysMealIntentHandler.swift; sourceTree = "<group>"; };
+		9268EB0E267B0A8300C02E50 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Intents.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				925AA1DF2678B0F200BABCD3 /* MealIntentKit.framework in Frameworks */,
+				92920AE1268C4D6900AE1B76 /* RxSchoolMeal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				925AA23D2678DED500BABCD3 /* MealIntentKit.framework in Frameworks */,
+				92AC04C2268F4A810021615F /* RxSchoolMeal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AC04C4268F4A920021615F /* RxSchoolMeal in Frameworks */,
 				925AA2402678DEEB00BABCD3 /* MealIntentKit.framework in Frameworks */,
 				925AA2242678DE9100BABCD3 /* IntentsUI.framework in Frameworks */,
 			);
@@ -200,7 +207,7 @@
 				925AA1CC2678B0F200BABCD3 /* MealIntentKit.h */,
 				925AA1CD2678B0F200BABCD3 /* Info.plist */,
 				925AA1E82678B28600BABCD3 /* NSUserActivity+IntentData.swift */,
-				925AA20F2678DB1D00BABCD3 /* Intents.intentdefinition */,
+				922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */,
 				925AA2422678DF5000BABCD3 /* ViewTodaysMealIntentHandler.swift */,
 			);
 			path = MealIntentKit;
@@ -266,6 +273,9 @@
 				925AA2302678DE9100BABCD3 /* PBXTargetDependency */,
 			);
 			name = XQUAREDemo;
+			packageProductDependencies = (
+				92920AE0268C4D6900AE1B76 /* RxSchoolMeal */,
+			);
 			productName = XQUAREDemo;
 			productReference = 925AA1AE26789ACF00BABCD3 /* XQUAREDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +294,8 @@
 			dependencies = (
 			);
 			name = MealIntentKit;
+			packageProductDependencies = (
+			);
 			productName = MealIntentKit;
 			productReference = 925AA1CA2678B0F200BABCD3 /* MealIntentKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -299,9 +311,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				92AC04C0268F4A7C0021615F /* PBXTargetDependency */,
 				925AA23C2678DECC00BABCD3 /* PBXTargetDependency */,
 			);
 			name = ViewTodaysMeal;
+			packageProductDependencies = (
+				92AC04C1268F4A810021615F /* RxSchoolMeal */,
+			);
 			productName = ViewTodaysMeal;
 			productReference = 925AA2162678DE9100BABCD3 /* ViewTodaysMeal.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -317,9 +333,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				92AC04C6268F4A950021615F /* PBXTargetDependency */,
 				925AA23F2678DEE600BABCD3 /* PBXTargetDependency */,
 			);
 			name = ViewTodaysMealUI;
+			packageProductDependencies = (
+				92AC04C3268F4A920021615F /* RxSchoolMeal */,
+			);
 			productName = ViewTodaysMealUI;
 			productReference = 925AA2222678DE9100BABCD3 /* ViewTodaysMealUI.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -355,8 +375,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 925AA1A526789ACF00BABCD3;
+			packageReferences = (
+				92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */,
+			);
 			productRefGroup = 925AA1AF26789ACF00BABCD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925AA2112678DB3B00BABCD3 /* Intents.intentdefinition in Sources */,
+				922DD1C3267AE91E00BE43BD /* Intents.intentdefinition in Sources */,
 				925AA1B626789ACF00BABCD3 /* ViewController.swift in Sources */,
 				925AA1B226789ACF00BABCD3 /* AppDelegate.swift in Sources */,
 			);
@@ -419,7 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925AA2102678DB1D00BABCD3 /* Intents.intentdefinition in Sources */,
+				922DD1C4267AE91E00BE43BD /* Intents.intentdefinition in Sources */,
 				925AA2432678DF5000BABCD3 /* ViewTodaysMealIntentHandler.swift in Sources */,
 				925AA1E92678B28600BABCD3 /* NSUserActivity+IntentData.swift in Sources */,
 			);
@@ -429,7 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925AA2392678DEB100BABCD3 /* Intents.intentdefinition in Sources */,
+				922DD1C5267AE91E00BE43BD /* Intents.intentdefinition in Sources */,
 				925AA21C2678DE9100BABCD3 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925AA23A2678DEB100BABCD3 /* Intents.intentdefinition in Sources */,
+				922DD1C6267AE91E00BE43BD /* Intents.intentdefinition in Sources */,
 				925AA2272678DE9100BABCD3 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,9 +495,26 @@
 			target = 925AA1C92678B0F200BABCD3 /* MealIntentKit */;
 			targetProxy = 925AA23E2678DEE600BABCD3 /* PBXContainerItemProxy */;
 		};
+		92AC04C0268F4A7C0021615F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92AC04BF268F4A7C0021615F /* RxSchoolMeal */;
+		};
+		92AC04C6268F4A950021615F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 92AC04C5268F4A950021615F /* RxSchoolMeal */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		922DD1C8267AE91E00BE43BD /* Intents.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				922DD1C7267AE91E00BE43BD /* Base */,
+				9268EB0E267B0A8300C02E50 /* ko */,
+			);
+			name = Intents.intentdefinition;
+			sourceTree = "<group>";
+		};
 		925AA1B726789ACF00BABCD3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -566,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -843,6 +886,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kimxwan0319/RxSchoolMeal";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92920AE0268C4D6900AE1B76 /* RxSchoolMeal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */;
+			productName = RxSchoolMeal;
+		};
+		92AC04BF268F4A7C0021615F /* RxSchoolMeal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */;
+			productName = RxSchoolMeal;
+		};
+		92AC04C1268F4A810021615F /* RxSchoolMeal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */;
+			productName = RxSchoolMeal;
+		};
+		92AC04C3268F4A920021615F /* RxSchoolMeal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */;
+			productName = RxSchoolMeal;
+		};
+		92AC04C5268F4A950021615F /* RxSchoolMeal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92920ADF268C4D6900AE1B76 /* XCRemoteSwiftPackageReference "RxSchoolMeal" */;
+			productName = RxSchoolMeal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 925AA1A626789ACF00BABCD3 /* Project object */;
 }

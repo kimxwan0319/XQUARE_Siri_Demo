@@ -9,17 +9,22 @@ import UIKit
 import MealIntentKit
 import Intents
 import IntentsUI
+import RxSchoolMeal
+import RxSwift
 
 class ViewController: UIViewController, INUIAddVoiceShortcutViewControllerDelegate {
 
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func restoreUserActivityState(_ activity: NSUserActivity) {
         super.restoreUserActivityState(activity)
         
-        print("yes")
+        
     }
 
     @IBAction func addShortcutBtn(_ sender: Any) {
