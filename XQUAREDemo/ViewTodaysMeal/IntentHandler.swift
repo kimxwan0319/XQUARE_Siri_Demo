@@ -41,7 +41,7 @@ class IntentHandler: INExtension {
             if $0 == [] {
                 meal = "없습니다."
             } else {
-                meal = $0.joined(separator: ", ") + "입니다."
+                meal = self.deleteBracket(str: $0.joined(separator: ", ")) + "입니다."
             }
             flag = false
         }, onFailure: { _ in
@@ -52,6 +52,15 @@ class IntentHandler: INExtension {
         
         while flag {}
         return meal!
+    }
+    
+    private func deleteBracket(str: String) -> String {
+        var processedStr = str
+        processedStr = processedStr.replacingOccurrences(of: "(", with: " #")
+        for branket in processedStr.getArrayAfterRegex(regex: "#[^ ]+") {
+            processedStr = processedStr.replacingOccurrences(of: branket, with: "")
+        }
+        return processedStr
     }
     
     private func nowPartTime() -> MealPartTime {
@@ -70,4 +79,21 @@ class IntentHandler: INExtension {
              ? .lunch : .dinner
     }
     
+}
+
+extension String{
+    func getArrayAfterRegex(regex: String) -> [String] {
+        
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let results = regex.matches(in: self,
+                                        range: NSRange(self.startIndex..., in: self))
+            return results.map {
+                String(self[Range($0.range, in: self)!])
+            }
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return []
+        }
+    }
 }
