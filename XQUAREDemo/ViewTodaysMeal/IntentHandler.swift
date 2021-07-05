@@ -55,15 +55,19 @@ class IntentHandler: INExtension {
     }
     
     private func nowPartTime() -> MealPartTime {
-        let hourFomatter = DateFormatter()
-        hourFomatter.dateFormat = "HH"
-        let minuteFomatter = DateFormatter()
-        minuteFomatter.dateFormat = "mm"
-        let nowTime = (
-            Int(hourFomatter.string(from: Date()))!,
-            Int(minuteFomatter.string(from: Date()))!
-        )
-        return ((nowTime.0 >= 0 && nowTime.1 >= 0) && (nowTime.0 <= 8 && nowTime.1 <= 20)) ? .breakfast : (nowTime.0 <= 13 && nowTime.1 <= 30) ? .lunch : .dinner
+        let now = Date()
+        var components = DateComponents(year: Calendar.current.dateComponents([.year], from: now).year!,
+                                        month: Calendar.current.dateComponents([.month], from: now).month!,
+                                        day: Calendar.current.dateComponents([.day], from: now).day!)
+        components.hour = 8
+        components.minute = 20
+        let breakfastEndTime = Calendar.current.date(from: components)!
+        components.hour = 13
+        components.minute = 30
+        let lunchEndTime = Calendar.current.date(from: components)!
+        
+        return now < breakfastEndTime ? .breakfast : now < lunchEndTime
+             ? .lunch : .dinner
     }
     
 }
